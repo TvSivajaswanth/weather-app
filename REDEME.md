@@ -1,4 +1,4 @@
-# 🌤️ Real-Time Weather App
+<img width="842" height="821" alt="image" src="https://github.com/user-attachments/assets/724d56e3-01c2-464d-a616-98a19cf33992" /># 🌤️ Real-Time Weather App
 
 A responsive weather web application that allows users to search for a city and view its current weather information in real time.
 
@@ -90,12 +90,8 @@ You can also use **VS Code Live Server** for development.
 
 ## 📸 Preview
 
-![Uploading image.png…]()
-:
+<img width="842" height="821" alt="Screenshot 2026-10-06 190656" src="https://github.com/user-attachments/assets/23510fe3-4356-48af-80eb-876d931b2dc9" />
 
-```markdown
-![Weather App Screenshot](screenshot.png)
-```
 
 ## 🔮 Future Improvements
 
