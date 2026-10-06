@@ -31,7 +31,6 @@ weather-app/
 ├── style.css
 ├── script.js
 ├── README.md
-└── .gitignore
 ```
 
 ## 🔄 How It Works
@@ -124,7 +123,7 @@ While building this project, I practiced:
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Tv.Siva Jaswanth 😉**
 
 Built as a learning project using HTML, CSS, JavaScript, and Open-Meteo.
 
