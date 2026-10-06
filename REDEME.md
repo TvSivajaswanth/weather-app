@@ -1,5 +1,3 @@
-<img width="842" height="821" alt="image" src="https://github.com/user-attachments/assets/724d56e3-01c2-464d-a616-98a19cf33992" /># 🌤️ Real-Time Weather App
-
 A responsive weather web application that allows users to search for a city and view its current weather information in real time.
 
 The application uses the **Open-Meteo API** to retrieve location and weather data without requiring an API key.
