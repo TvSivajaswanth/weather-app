@@ -90,7 +90,8 @@ You can also use **VS Code Live Server** for development.
 
 ## 📸 Preview
 
-Add a screenshot of your application here after you finish the UI:
+![Uploading image.png…]()
+:
 
 ```markdown
 ![Weather App Screenshot](screenshot.png)
