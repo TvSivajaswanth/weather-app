@@ -1,0 +1,356 @@
+/* =================================
+   Dynamic Weather Background
+   ================================= */
+/* ==============================
+   General Page
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+
+    padding: 30px;
+}
+
+
+/* ==============================
+   Main App
+   ============================== */
+
+.weather-app {
+    width: 100%;
+    max-width: 900px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* ==============================
+   Heading
+   ============================== */
+
+.weather-app > h1 {
+    text-align: center;
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 36px;
+}
+
+
+/* ==============================
+   Search Box
+   ============================== */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==============================
+   Current Weather Card
+   ============================== */
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.weather-card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.temperature {
+    font-size: 64px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+#condition {
+    font-size: 20px;
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   Weather Details
+   ============================== */
+
+.weather-details {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.detail {
+    background: #f3f4f6;
+
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+.detail span {
+    font-size: 28px;
+}
+
+.detail p {
+    margin: 8px 0;
+
+    color: #666;
+}
+
+.detail strong {
+    font-size: 18px;
+}
+
+
+/* ==============================
+   Forecast Section
+   ============================== */
+
+.forecast {
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 25px;
+
+    border-radius: 20px;
+}
+
+.forecast > h2 {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   Forecast Cards
+   ============================== */
+
+.forecast-container {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+.forecast-card {
+    text-align: center;
+
+    background: #f3f4f6;
+
+    padding: 20px 10px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card h3 {
+    margin-bottom: 10px;
+}
+
+.forecast-card div {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.forecast-card strong {
+    font-size: 20px;
+}
+
+.forecast-card p {
+    margin-top: 5px;
+
+    color: #666;
+}
+
+
+/* ==============================
+   Mobile Responsive Design
+   ============================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .weather-app {
+        padding: 20px;
+    }
+
+    .weather-app > h1 {
+        font-size: 28px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .weather-details {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    transition:
+        background 1.5s ease,
+        color 1s ease;
+}
+
+/* Background scene */
+body::before {
+    content: "";
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -2;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 255, 255, 0.4),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #4facfe,
+            #00f2fe
+        );
+
+    transition: background 1.5s ease;
+}
+
+
+/* 3D-style light */
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 400px;
+    height: 400px;
+
+    top: -150px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    filter: blur(5px);
+
+    box-shadow:
+        0 0 80px rgba(255, 255, 255, 0.3);
+
+    z-index: -1;
+
+    animation: floatingLight 8s ease-in-out infinite;
+}
+
+
+@keyframes floatingLight {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-30px, 30px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

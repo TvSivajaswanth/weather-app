@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-app">
+
+        <h1>🌤️ Weather App</h1>
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter city name"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+        </div>
+
+
+        <!-- Current Weather -->
+        <div class="weather-card">
+
+            <h2 id="cityName">Kurnool</h2>
+
+            <div class="temperature">
+                <span id="temperature">28</span>°C
+            </div>
+
+            <p id="condition">Partly Cloudy</p>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">65%</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <strong id="wind">12 km/h</strong>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">30°C</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Forecast -->
+        <div class="forecast">
+
+            <h2>5-Day Forecast</h2>
+
+            <div class="forecast-container">
+
+                <div class="forecast-card">
+                    <h3>Mon</h3>
+                    <div>☀️</div>
+                    <strong>32°C</strong>
+                    <p>Sunny</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Tue</h3>
+                    <div>🌤️</div>
+                    <strong>30°C</strong>
+                    <p>Cloudy</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Wed</h3>
+                    <div>🌧️</div>
+                    <strong>27°C</strong>
+                    <p>Rain</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Thu</h3>
+                    <div>⛅</div>
+                    <strong>29°C</strong>
+                    <p>Cloudy</p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Fri</h3>
+                    <div>☀️</div>
+                    <strong>33°C</strong>
+                    <p>Sunny</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
